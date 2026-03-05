@@ -4,11 +4,13 @@ body {
     background: #f5f7fb;
 }
 
+/* Container */
 .container {
     max-width: 800px;
-    margin: 50px auto;
+    width: 92%;
+    margin: 30px auto;
     background: white;
-    padding: 35px;
+    padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
@@ -16,11 +18,13 @@ body {
 h1 {
     text-align: center;
     color: #333;
+    font-size: 28px;
 }
 
+/* Search */
 .search-wrapper {
     position: relative;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 input {
@@ -30,6 +34,7 @@ input {
     border-radius: 8px;
     border: 1px solid #ddd;
     outline: none;
+    box-sizing: border-box;
 }
 
 input:focus {
@@ -50,7 +55,7 @@ input:focus {
 }
 
 .suggestion-item {
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
 }
 
@@ -61,9 +66,9 @@ input:focus {
 
 /* Word Title */
 .word-title {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 /* Phonetic */
@@ -74,14 +79,14 @@ input:focus {
     border-radius: 20px;
     background: #eef2ff;
     color: #4e73df;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* Audio Buttons */
 .audio-btn {
-    margin-top: 15px;
-    margin-right: 10px;
-    padding: 10px 14px;
+    margin-top: 12px;
+    margin-right: 8px;
+    padding: 8px 14px;
     border: none;
     border-radius: 30px;
     background: #4e73df;
@@ -95,7 +100,7 @@ input:focus {
 }
 
 .section {
-    margin-top: 25px;
+    margin-top: 22px;
 }
 
 .definition {
@@ -104,12 +109,56 @@ input:focus {
 }
 
 .example {
-    margin-left: 25px;
+    margin-left: 20px;
     font-style: italic;
     color: #555;
 }
 
 .example-hi {
-    margin-left: 25px;
+    margin-left: 20px;
     color: #1cc88a;
+}
+
+
+/* ============================= */
+/* 📱 Mobile Responsive Design */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 15px auto;
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .word-title {
+        font-size: 26px;
+    }
+
+    input {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .phonetic {
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+
+    .audio-btn {
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+
+    .definition,
+    .example,
+    .example-hi {
+        margin-left: 10px;
+        font-size: 14px;
+    }
 }
