@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>English → Hindi Dictionary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>📘 English → Hindi Dictionary</h1>
+
+        <div class="search-wrapper">
+            <input type="text" id="word" placeholder="Search word..." autocomplete="off">
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
